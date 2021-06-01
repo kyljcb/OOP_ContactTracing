@@ -17,5 +17,9 @@ namespace OOP_ContactTracing
             InitializeComponent();
         }
 
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
