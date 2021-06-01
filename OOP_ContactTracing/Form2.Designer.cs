@@ -116,6 +116,7 @@ namespace OOP_ContactTracing
             this.rb_Q1Yes.TabIndex = 9;
             this.rb_Q1Yes.TabStop = true;
             this.rb_Q1Yes.UseVisualStyleBackColor = true;
+            this.rb_Q1Yes.CheckedChanged += new System.EventHandler(this.rb_Q1Yes_CheckedChanged);
             // 
             // rb_Q1No
             // 
@@ -126,6 +127,7 @@ namespace OOP_ContactTracing
             this.rb_Q1No.TabIndex = 10;
             this.rb_Q1No.TabStop = true;
             this.rb_Q1No.UseVisualStyleBackColor = true;
+            this.rb_Q1No.CheckedChanged += new System.EventHandler(this.rb_Q1No_CheckedChanged);
             // 
             // rb_Q2Yes
             // 
@@ -136,6 +138,7 @@ namespace OOP_ContactTracing
             this.rb_Q2Yes.TabIndex = 11;
             this.rb_Q2Yes.TabStop = true;
             this.rb_Q2Yes.UseVisualStyleBackColor = true;
+            this.rb_Q2Yes.CheckedChanged += new System.EventHandler(this.rb_Q2Yes_CheckedChanged);
             // 
             // rb_Q2No
             // 
@@ -146,6 +149,7 @@ namespace OOP_ContactTracing
             this.rb_Q2No.TabIndex = 12;
             this.rb_Q2No.TabStop = true;
             this.rb_Q2No.UseVisualStyleBackColor = true;
+            this.rb_Q2No.CheckedChanged += new System.EventHandler(this.rb_Q2No_CheckedChanged);
             // 
             // rb_Q3Yes
             // 
@@ -156,6 +160,7 @@ namespace OOP_ContactTracing
             this.rb_Q3Yes.TabIndex = 13;
             this.rb_Q3Yes.TabStop = true;
             this.rb_Q3Yes.UseVisualStyleBackColor = true;
+            this.rb_Q3Yes.CheckedChanged += new System.EventHandler(this.rb_Q3Yes_CheckedChanged);
             // 
             // rb_Q3No
             // 
@@ -166,6 +171,7 @@ namespace OOP_ContactTracing
             this.rb_Q3No.TabIndex = 14;
             this.rb_Q3No.TabStop = true;
             this.rb_Q3No.UseVisualStyleBackColor = true;
+            this.rb_Q3No.CheckedChanged += new System.EventHandler(this.rb_Q3No_CheckedChanged);
             // 
             // rb_Q4Yes
             // 
@@ -176,7 +182,7 @@ namespace OOP_ContactTracing
             this.rb_Q4Yes.TabIndex = 15;
             this.rb_Q4Yes.TabStop = true;
             this.rb_Q4Yes.UseVisualStyleBackColor = true;
-            this.rb_Q4Yes.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
+            this.rb_Q4Yes.CheckedChanged += new System.EventHandler(this.rb_Q4Yes_TextChanged);
             // 
             // rb_Q4No
             // 
@@ -187,6 +193,7 @@ namespace OOP_ContactTracing
             this.rb_Q4No.TabIndex = 16;
             this.rb_Q4No.TabStop = true;
             this.rb_Q4No.UseVisualStyleBackColor = true;
+            this.rb_Q4No.CheckedChanged += new System.EventHandler(this.rb_Q4No_CheckedChanged);
             // 
             // rb_Q5Yes
             // 
@@ -197,6 +204,7 @@ namespace OOP_ContactTracing
             this.rb_Q5Yes.TabIndex = 17;
             this.rb_Q5Yes.TabStop = true;
             this.rb_Q5Yes.UseVisualStyleBackColor = true;
+            this.rb_Q5Yes.CheckedChanged += new System.EventHandler(this.rb_Q5Yes_CheckedChanged);
             // 
             // rb_Q5No
             // 
@@ -207,6 +215,7 @@ namespace OOP_ContactTracing
             this.rb_Q5No.TabIndex = 18;
             this.rb_Q5No.TabStop = true;
             this.rb_Q5No.UseVisualStyleBackColor = true;
+            this.rb_Q5No.CheckedChanged += new System.EventHandler(this.rb_Q5No_CheckedChanged);
             // 
             // Form2
             // 
