@@ -14,6 +14,7 @@ namespace OOP_ContactTracing
     public partial class Form1 : Form
     {
         String Gender = "";
+        
         public Form1()
         {
             InitializeComponent();
@@ -40,6 +41,11 @@ namespace OOP_ContactTracing
             sw.WriteLine(label_ContactNo.Text + ": " + tb_ContactNo.Text);
             sw.WriteLine(label_BodyTemp.Text + tb_Temperature.Text);
             sw.Close();
+
+            this.Hide();
+            Form2 f = new Form2();
+            f.Show();
+
         }
 
         private void rb_Male_CheckedChanged(object sender, EventArgs e)
