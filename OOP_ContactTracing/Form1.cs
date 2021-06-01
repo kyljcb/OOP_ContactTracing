@@ -13,6 +13,7 @@ namespace OOP_ContactTracing
 {
     public partial class Form1 : Form
     {
+        String Gender = "";
         public Form1()
         {
             InitializeComponent();
@@ -23,13 +24,33 @@ namespace OOP_ContactTracing
 
         }
 
+
         private void btnNext_Click(object sender, EventArgs e)
         {
-            StreamWriter outputFile;
-            outputFile = File.AppendText("Output.txt");
-            outputFile.WriteLine(label_Name.Text + tb_Name.Text);
-            outputFile.Close();
-            
+            //StreamWriter outputFile;
+            //outputFile = File.AppendText("Output.txt");
+            //outputFile.WriteLine(label_Name.Text + tb_Name.Text);
+            //outputFile.Close();
+
+            StreamWriter sw = new StreamWriter(Application.StartupPath + "\\Contact Tracing\\" + tb_Name.Text + ".txt");
+            sw.WriteLine(label_Name.Text + tb_Name.Text);
+            sw.WriteLine(label_Age.Text + tb_Age.Text);
+            sw.WriteLine(label_Gender.Text + Gender);
+            sw.WriteLine(label_Address.Text + tb_Address.Text);
+            sw.WriteLine(label_ContactNo.Text + ": " + tb_ContactNo.Text);
+            sw.WriteLine(label_BodyTemp.Text + tb_Temperature.Text);
+            sw.Close();
+        }
+
+        private void rb_Male_CheckedChanged(object sender, EventArgs e)
+        {
+            Gender = "Male";
+
+        }
+
+        private void rb_Female_CheckedChanged(object sender, EventArgs e)
+        {
+            Gender = "Female";
 
         }
     }

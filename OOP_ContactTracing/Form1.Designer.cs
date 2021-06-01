@@ -40,8 +40,8 @@ namespace OOP_ContactTracing
             this.label_Age = new System.Windows.Forms.Label();
             this.label_Gender = new System.Windows.Forms.Label();
             this.label_Address = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.label_ContactNo = new System.Windows.Forms.Label();
+            this.label_BodyTemp = new System.Windows.Forms.Label();
             this.btn_Next = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -84,6 +84,7 @@ namespace OOP_ContactTracing
             this.rb_Male.TabStop = true;
             this.rb_Male.Text = "Male";
             this.rb_Male.UseVisualStyleBackColor = true;
+            this.rb_Male.CheckedChanged += new System.EventHandler(this.rb_Male_CheckedChanged);
             // 
             // rb_Female
             // 
@@ -95,6 +96,7 @@ namespace OOP_ContactTracing
             this.rb_Female.TabStop = true;
             this.rb_Female.Text = "Female";
             this.rb_Female.UseVisualStyleBackColor = true;
+            this.rb_Female.CheckedChanged += new System.EventHandler(this.rb_Female_CheckedChanged);
             // 
             // tb_Temperature
             // 
@@ -139,23 +141,23 @@ namespace OOP_ContactTracing
             this.label_Address.TabIndex = 10;
             this.label_Address.Text = "Address: ";
             // 
-            // label5
+            // label_ContactNo
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(14, 235);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 20);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Contact No.";
+            this.label_ContactNo.AutoSize = true;
+            this.label_ContactNo.Location = new System.Drawing.Point(14, 235);
+            this.label_ContactNo.Name = "label_ContactNo";
+            this.label_ContactNo.Size = new System.Drawing.Size(87, 20);
+            this.label_ContactNo.TabIndex = 11;
+            this.label_ContactNo.Text = "Contact No.";
             // 
-            // label6
+            // label_BodyTemp
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(14, 274);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(138, 20);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Body Temperature: ";
+            this.label_BodyTemp.AutoSize = true;
+            this.label_BodyTemp.Location = new System.Drawing.Point(14, 274);
+            this.label_BodyTemp.Name = "label_BodyTemp";
+            this.label_BodyTemp.Size = new System.Drawing.Size(138, 20);
+            this.label_BodyTemp.TabIndex = 12;
+            this.label_BodyTemp.Text = "Body Temperature: ";
             // 
             // btn_Next
             // 
@@ -173,8 +175,8 @@ namespace OOP_ContactTracing
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(593, 361);
             this.Controls.Add(this.btn_Next);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label_BodyTemp);
+            this.Controls.Add(this.label_ContactNo);
             this.Controls.Add(this.label_Address);
             this.Controls.Add(this.label_Gender);
             this.Controls.Add(this.label_Age);
@@ -208,8 +210,8 @@ namespace OOP_ContactTracing
         private System.Windows.Forms.Label label_Age;
         private System.Windows.Forms.Label label_Gender;
         private System.Windows.Forms.Label label_Address;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label_ContactNo;
+        private System.Windows.Forms.Label label_BodyTemp;
         private System.Windows.Forms.TextBox tb_Temperature;
         private System.Windows.Forms.Button btn_Next;
     }
