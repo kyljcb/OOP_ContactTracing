@@ -43,7 +43,8 @@ namespace OOP_ContactTracing
             //sw.Close();
 
             this.Hide();
-            Form2 f = new Form2();
+            Form2 f = new Form2(tb_Name.Text, tb_Age.Text, Gender, tb_Address.Text, tb_ContactNo.Text, tb_Temperature.Text);
+
             f.Show();
 
         }

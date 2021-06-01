@@ -18,15 +18,22 @@ namespace OOP_ContactTracing
         String Q2 = "";
         String Q3 = "";
         String Q4 = "";
-        String Q5 = "";   
+        String Q5 = "";
 
-        
+        string tb_Name, tb_Age, Gender, tb_Address, tb_ContactNo, tb_Temperature;
+
+
         public Form2()
         {
             InitializeComponent();
           
         }
 
+        public Form2(String tb_Name, String tb_Age, String Gender, String tb_Address, String tb_ContactNo, String tb_Temperature)
+        {
+            InitializeComponent();
+
+        }
         private void Form2_Load(object sender, EventArgs e)
         {
             tb_Q1.Text = "Have you visited any affected geographic area / country within the last 30 days?";
@@ -100,7 +107,14 @@ namespace OOP_ContactTracing
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
-            
+            StreamWriter sw = new StreamWriter(Application.StartupPath + "\\Contact Tracing\\" + tb_Name + ".txt");
+            sw.WriteLine("Name: "  + tb_Name);
+            sw.WriteLine("Age: " + tb_Age);
+            sw.WriteLine("Gender: " + Gender);
+            sw.WriteLine("Address: " + tb_Address);
+            sw.WriteLine("Contact No.: "  + tb_ContactNo);
+            sw.WriteLine("Body Temperature: " + tb_Temperature);
+            sw.Close();
         }
     }
 }
