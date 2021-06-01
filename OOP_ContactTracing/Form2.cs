@@ -107,13 +107,13 @@ namespace OOP_ContactTracing
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
-            StreamWriter sw = new StreamWriter(Application.StartupPath + "\\Contact Tracing\\" + tb_Name + ".txt");
-            sw.WriteLine("Name: "  + tb_Name);
-            sw.WriteLine("Age: " + tb_Age);
-            sw.WriteLine("Gender: " + Gender);
-            sw.WriteLine("Address: " + tb_Address);
-            sw.WriteLine("Contact No.: "  + tb_ContactNo);
-            sw.WriteLine("Body Temperature: " + tb_Temperature);
+            StreamWriter sw = new StreamWriter(Application.StartupPath + "\\Contact Tracing\\" + this.tb_Name + ".txt");
+            sw.WriteLine("Name: "  + this.tb_Name);
+            sw.WriteLine("Age: " + this.tb_Age);
+            sw.WriteLine("Gender: " + this.Gender);
+            sw.WriteLine("Address: " + this.tb_Address);
+            sw.WriteLine("Contact No.: "  + this.tb_ContactNo);
+            sw.WriteLine("Body Temperature: " + this.tb_Temperature);
             sw.Close();
         }
     }
