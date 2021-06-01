@@ -36,17 +36,18 @@ namespace OOP_ContactTracing
             this.tb_Q5 = new System.Windows.Forms.TextBox();
             this.label_Yes = new System.Windows.Forms.Label();
             this.label_No = new System.Windows.Forms.Label();
-            this.rb_Q1Yes = new System.Windows.Forms.RadioButton();
-            this.rb_Q1No = new System.Windows.Forms.RadioButton();
-            this.rb_Q2Yes = new System.Windows.Forms.RadioButton();
-            this.rb_Q2No = new System.Windows.Forms.RadioButton();
-            this.rb_Q3Yes = new System.Windows.Forms.RadioButton();
-            this.rb_Q3No = new System.Windows.Forms.RadioButton();
-            this.rb_Q4Yes = new System.Windows.Forms.RadioButton();
-            this.rb_Q4No = new System.Windows.Forms.RadioButton();
-            this.rb_Q5Yes = new System.Windows.Forms.RadioButton();
-            this.rb_Q5No = new System.Windows.Forms.RadioButton();
             this.btn_Save = new System.Windows.Forms.Button();
+            this.cb_Q1Yes = new System.Windows.Forms.CheckBox();
+            this.cb_Q1No = new System.Windows.Forms.CheckBox();
+            this.cb_Q2Yes = new System.Windows.Forms.CheckBox();
+            this.cb_Q3Yes = new System.Windows.Forms.CheckBox();
+            this.cb_Q4Yes = new System.Windows.Forms.CheckBox();
+            this.cb_Q5Yes = new System.Windows.Forms.CheckBox();
+            this.cb_Q2No = new System.Windows.Forms.CheckBox();
+            this.cb_Q3No = new System.Windows.Forms.CheckBox();
+            this.cb_Q4No = new System.Windows.Forms.CheckBox();
+            this.cb_Q5No = new System.Windows.Forms.CheckBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // tb_Q1
@@ -108,116 +109,6 @@ namespace OOP_ContactTracing
             this.label_No.TabIndex = 8;
             this.label_No.Text = "No";
             // 
-            // rb_Q1Yes
-            // 
-            this.rb_Q1Yes.AutoSize = true;
-            this.rb_Q1Yes.Location = new System.Drawing.Point(567, 69);
-            this.rb_Q1Yes.Name = "rb_Q1Yes";
-            this.rb_Q1Yes.Size = new System.Drawing.Size(17, 16);
-            this.rb_Q1Yes.TabIndex = 9;
-            this.rb_Q1Yes.TabStop = true;
-            this.rb_Q1Yes.UseVisualStyleBackColor = true;
-            this.rb_Q1Yes.CheckedChanged += new System.EventHandler(this.rb_Q1Yes_CheckedChanged);
-            // 
-            // rb_Q1No
-            // 
-            this.rb_Q1No.AutoSize = true;
-            this.rb_Q1No.Location = new System.Drawing.Point(628, 69);
-            this.rb_Q1No.Name = "rb_Q1No";
-            this.rb_Q1No.Size = new System.Drawing.Size(17, 16);
-            this.rb_Q1No.TabIndex = 10;
-            this.rb_Q1No.TabStop = true;
-            this.rb_Q1No.UseVisualStyleBackColor = true;
-            this.rb_Q1No.CheckedChanged += new System.EventHandler(this.rb_Q1No_CheckedChanged);
-            // 
-            // rb_Q2Yes
-            // 
-            this.rb_Q2Yes.AutoSize = true;
-            this.rb_Q2Yes.Location = new System.Drawing.Point(567, 134);
-            this.rb_Q2Yes.Name = "rb_Q2Yes";
-            this.rb_Q2Yes.Size = new System.Drawing.Size(17, 16);
-            this.rb_Q2Yes.TabIndex = 11;
-            this.rb_Q2Yes.TabStop = true;
-            this.rb_Q2Yes.UseVisualStyleBackColor = true;
-            this.rb_Q2Yes.CheckedChanged += new System.EventHandler(this.rb_Q2Yes_CheckedChanged);
-            // 
-            // rb_Q2No
-            // 
-            this.rb_Q2No.AutoSize = true;
-            this.rb_Q2No.Location = new System.Drawing.Point(628, 134);
-            this.rb_Q2No.Name = "rb_Q2No";
-            this.rb_Q2No.Size = new System.Drawing.Size(17, 16);
-            this.rb_Q2No.TabIndex = 12;
-            this.rb_Q2No.TabStop = true;
-            this.rb_Q2No.UseVisualStyleBackColor = true;
-            this.rb_Q2No.CheckedChanged += new System.EventHandler(this.rb_Q2No_CheckedChanged);
-            // 
-            // rb_Q3Yes
-            // 
-            this.rb_Q3Yes.AutoSize = true;
-            this.rb_Q3Yes.Location = new System.Drawing.Point(567, 180);
-            this.rb_Q3Yes.Name = "rb_Q3Yes";
-            this.rb_Q3Yes.Size = new System.Drawing.Size(17, 16);
-            this.rb_Q3Yes.TabIndex = 13;
-            this.rb_Q3Yes.TabStop = true;
-            this.rb_Q3Yes.UseVisualStyleBackColor = true;
-            this.rb_Q3Yes.CheckedChanged += new System.EventHandler(this.rb_Q3Yes_CheckedChanged);
-            // 
-            // rb_Q3No
-            // 
-            this.rb_Q3No.AutoSize = true;
-            this.rb_Q3No.Location = new System.Drawing.Point(628, 180);
-            this.rb_Q3No.Name = "rb_Q3No";
-            this.rb_Q3No.Size = new System.Drawing.Size(17, 16);
-            this.rb_Q3No.TabIndex = 14;
-            this.rb_Q3No.TabStop = true;
-            this.rb_Q3No.UseVisualStyleBackColor = true;
-            this.rb_Q3No.CheckedChanged += new System.EventHandler(this.rb_Q3No_CheckedChanged);
-            // 
-            // rb_Q4Yes
-            // 
-            this.rb_Q4Yes.AutoSize = true;
-            this.rb_Q4Yes.Location = new System.Drawing.Point(567, 226);
-            this.rb_Q4Yes.Name = "rb_Q4Yes";
-            this.rb_Q4Yes.Size = new System.Drawing.Size(17, 16);
-            this.rb_Q4Yes.TabIndex = 15;
-            this.rb_Q4Yes.TabStop = true;
-            this.rb_Q4Yes.UseVisualStyleBackColor = true;
-            this.rb_Q4Yes.CheckedChanged += new System.EventHandler(this.rb_Q4Yes_TextChanged);
-            // 
-            // rb_Q4No
-            // 
-            this.rb_Q4No.AutoSize = true;
-            this.rb_Q4No.Location = new System.Drawing.Point(628, 226);
-            this.rb_Q4No.Name = "rb_Q4No";
-            this.rb_Q4No.Size = new System.Drawing.Size(17, 16);
-            this.rb_Q4No.TabIndex = 16;
-            this.rb_Q4No.TabStop = true;
-            this.rb_Q4No.UseVisualStyleBackColor = true;
-            this.rb_Q4No.CheckedChanged += new System.EventHandler(this.rb_Q4No_CheckedChanged);
-            // 
-            // rb_Q5Yes
-            // 
-            this.rb_Q5Yes.AutoSize = true;
-            this.rb_Q5Yes.Location = new System.Drawing.Point(567, 287);
-            this.rb_Q5Yes.Name = "rb_Q5Yes";
-            this.rb_Q5Yes.Size = new System.Drawing.Size(17, 16);
-            this.rb_Q5Yes.TabIndex = 17;
-            this.rb_Q5Yes.TabStop = true;
-            this.rb_Q5Yes.UseVisualStyleBackColor = true;
-            this.rb_Q5Yes.CheckedChanged += new System.EventHandler(this.rb_Q5Yes_CheckedChanged);
-            // 
-            // rb_Q5No
-            // 
-            this.rb_Q5No.AutoSize = true;
-            this.rb_Q5No.Location = new System.Drawing.Point(628, 287);
-            this.rb_Q5No.Name = "rb_Q5No";
-            this.rb_Q5No.Size = new System.Drawing.Size(17, 16);
-            this.rb_Q5No.TabIndex = 18;
-            this.rb_Q5No.TabStop = true;
-            this.rb_Q5No.UseVisualStyleBackColor = true;
-            this.rb_Q5No.CheckedChanged += new System.EventHandler(this.rb_Q5No_CheckedChanged);
-            // 
             // btn_Save
             // 
             this.btn_Save.Location = new System.Drawing.Point(567, 392);
@@ -228,22 +119,131 @@ namespace OOP_ContactTracing
             this.btn_Save.UseVisualStyleBackColor = true;
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
+            // cb_Q1Yes
+            // 
+            this.cb_Q1Yes.AutoSize = true;
+            this.cb_Q1Yes.Location = new System.Drawing.Point(567, 63);
+            this.cb_Q1Yes.Name = "cb_Q1Yes";
+            this.cb_Q1Yes.Size = new System.Drawing.Size(18, 17);
+            this.cb_Q1Yes.TabIndex = 20;
+            this.cb_Q1Yes.UseVisualStyleBackColor = true;
+            this.cb_Q1Yes.CheckedChanged += new System.EventHandler(this.cb_Q1Yes_CheckedChanged);
+            // 
+            // cb_Q1No
+            // 
+            this.cb_Q1No.AutoSize = true;
+            this.cb_Q1No.Location = new System.Drawing.Point(628, 63);
+            this.cb_Q1No.Name = "cb_Q1No";
+            this.cb_Q1No.Size = new System.Drawing.Size(18, 17);
+            this.cb_Q1No.TabIndex = 21;
+            this.cb_Q1No.UseVisualStyleBackColor = true;
+            this.cb_Q1No.CheckedChanged += new System.EventHandler(this.cb_Q1No_CheckedChanged);
+            // 
+            // cb_Q2Yes
+            // 
+            this.cb_Q2Yes.AutoSize = true;
+            this.cb_Q2Yes.Location = new System.Drawing.Point(567, 131);
+            this.cb_Q2Yes.Name = "cb_Q2Yes";
+            this.cb_Q2Yes.Size = new System.Drawing.Size(18, 17);
+            this.cb_Q2Yes.TabIndex = 22;
+            this.cb_Q2Yes.UseVisualStyleBackColor = true;
+            this.cb_Q2Yes.CheckedChanged += new System.EventHandler(this.cb_Q2Yes_CheckedChanged);
+            // 
+            // cb_Q3Yes
+            // 
+            this.cb_Q3Yes.AutoSize = true;
+            this.cb_Q3Yes.Location = new System.Drawing.Point(567, 181);
+            this.cb_Q3Yes.Name = "cb_Q3Yes";
+            this.cb_Q3Yes.Size = new System.Drawing.Size(18, 17);
+            this.cb_Q3Yes.TabIndex = 23;
+            this.cb_Q3Yes.UseVisualStyleBackColor = true;
+            this.cb_Q3Yes.CheckedChanged += new System.EventHandler(this.cb_Q3Yes_CheckedChanged);
+            // 
+            // cb_Q4Yes
+            // 
+            this.cb_Q4Yes.AutoSize = true;
+            this.cb_Q4Yes.Location = new System.Drawing.Point(567, 227);
+            this.cb_Q4Yes.Name = "cb_Q4Yes";
+            this.cb_Q4Yes.Size = new System.Drawing.Size(18, 17);
+            this.cb_Q4Yes.TabIndex = 24;
+            this.cb_Q4Yes.UseVisualStyleBackColor = true;
+            this.cb_Q4Yes.CheckedChanged += new System.EventHandler(this.cb_Q4Yes_CheckedChanged);
+            // 
+            // cb_Q5Yes
+            // 
+            this.cb_Q5Yes.AutoSize = true;
+            this.cb_Q5Yes.Location = new System.Drawing.Point(567, 295);
+            this.cb_Q5Yes.Name = "cb_Q5Yes";
+            this.cb_Q5Yes.Size = new System.Drawing.Size(18, 17);
+            this.cb_Q5Yes.TabIndex = 25;
+            this.cb_Q5Yes.UseVisualStyleBackColor = true;
+            this.cb_Q5Yes.CheckedChanged += new System.EventHandler(this.cb_Q5Yes_CheckedChanged);
+            // 
+            // cb_Q2No
+            // 
+            this.cb_Q2No.AutoSize = true;
+            this.cb_Q2No.Location = new System.Drawing.Point(628, 131);
+            this.cb_Q2No.Name = "cb_Q2No";
+            this.cb_Q2No.Size = new System.Drawing.Size(18, 17);
+            this.cb_Q2No.TabIndex = 26;
+            this.cb_Q2No.UseVisualStyleBackColor = true;
+            this.cb_Q2No.CheckedChanged += new System.EventHandler(this.cb_Q2No_CheckedChanged);
+            // 
+            // cb_Q3No
+            // 
+            this.cb_Q3No.AutoSize = true;
+            this.cb_Q3No.Location = new System.Drawing.Point(628, 181);
+            this.cb_Q3No.Name = "cb_Q3No";
+            this.cb_Q3No.Size = new System.Drawing.Size(18, 17);
+            this.cb_Q3No.TabIndex = 27;
+            this.cb_Q3No.UseVisualStyleBackColor = true;
+            this.cb_Q3No.CheckedChanged += new System.EventHandler(this.cb_Q3No_CheckedChanged);
+            // 
+            // cb_Q4No
+            // 
+            this.cb_Q4No.AutoSize = true;
+            this.cb_Q4No.Location = new System.Drawing.Point(628, 227);
+            this.cb_Q4No.Name = "cb_Q4No";
+            this.cb_Q4No.Size = new System.Drawing.Size(18, 17);
+            this.cb_Q4No.TabIndex = 28;
+            this.cb_Q4No.UseVisualStyleBackColor = true;
+            this.cb_Q4No.CheckedChanged += new System.EventHandler(this.cb_Q4No_CheckedChanged);
+            // 
+            // cb_Q5No
+            // 
+            this.cb_Q5No.AutoSize = true;
+            this.cb_Q5No.Location = new System.Drawing.Point(628, 295);
+            this.cb_Q5No.Name = "cb_Q5No";
+            this.cb_Q5No.Size = new System.Drawing.Size(18, 17);
+            this.cb_Q5No.TabIndex = 29;
+            this.cb_Q5No.UseVisualStyleBackColor = true;
+            this.cb_Q5No.CheckedChanged += new System.EventHandler(this.cb_Q5No_CheckedChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(119, 358);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(125, 27);
+            this.textBox1.TabIndex = 30;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(694, 450);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cb_Q5No);
+            this.Controls.Add(this.cb_Q4No);
+            this.Controls.Add(this.cb_Q3No);
+            this.Controls.Add(this.cb_Q2No);
+            this.Controls.Add(this.cb_Q5Yes);
+            this.Controls.Add(this.cb_Q4Yes);
+            this.Controls.Add(this.cb_Q3Yes);
+            this.Controls.Add(this.cb_Q2Yes);
+            this.Controls.Add(this.cb_Q1No);
+            this.Controls.Add(this.cb_Q1Yes);
             this.Controls.Add(this.btn_Save);
-            this.Controls.Add(this.rb_Q5No);
-            this.Controls.Add(this.rb_Q5Yes);
-            this.Controls.Add(this.rb_Q4No);
-            this.Controls.Add(this.rb_Q4Yes);
-            this.Controls.Add(this.rb_Q3No);
-            this.Controls.Add(this.rb_Q3Yes);
-            this.Controls.Add(this.rb_Q2No);
-            this.Controls.Add(this.rb_Q2Yes);
-            this.Controls.Add(this.rb_Q1No);
-            this.Controls.Add(this.rb_Q1Yes);
             this.Controls.Add(this.label_No);
             this.Controls.Add(this.label_Yes);
             this.Controls.Add(this.tb_Q5);
@@ -268,16 +268,17 @@ namespace OOP_ContactTracing
         private System.Windows.Forms.TextBox tb_Q5;
         private System.Windows.Forms.Label label_Yes;
         private System.Windows.Forms.Label label_No;
-        private System.Windows.Forms.RadioButton rb_Q1Yes;
-        private System.Windows.Forms.RadioButton rb_Q1No;
-        private System.Windows.Forms.RadioButton rb_Q2Yes;
-        private System.Windows.Forms.RadioButton rb_Q2No;
-        private System.Windows.Forms.RadioButton rb_Q3Yes;
-        private System.Windows.Forms.RadioButton rb_Q3No;
-        private System.Windows.Forms.RadioButton rb_Q4Yes;
-        private System.Windows.Forms.RadioButton rb_Q4No;
-        private System.Windows.Forms.RadioButton rb_Q5Yes;
-        private System.Windows.Forms.RadioButton rb_Q5No;
         private System.Windows.Forms.Button btn_Save;
+        private System.Windows.Forms.CheckBox cb_Q1Yes;
+        private System.Windows.Forms.CheckBox cb_Q1No;
+        private System.Windows.Forms.CheckBox cb_Q2Yes;
+        private System.Windows.Forms.CheckBox cb_Q3Yes;
+        private System.Windows.Forms.CheckBox cb_Q4Yes;
+        private System.Windows.Forms.CheckBox cb_Q5Yes;
+        private System.Windows.Forms.CheckBox cb_Q2No;
+        private System.Windows.Forms.CheckBox cb_Q3No;
+        private System.Windows.Forms.CheckBox cb_Q4No;
+        private System.Windows.Forms.CheckBox cb_Q5No;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

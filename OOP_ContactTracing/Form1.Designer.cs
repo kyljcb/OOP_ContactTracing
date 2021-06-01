@@ -198,11 +198,11 @@ namespace OOP_ContactTracing
 
         #endregion
 
-        private System.Windows.Forms.TextBox tb_Name;
-        private System.Windows.Forms.TextBox tb_Age;
-        private System.Windows.Forms.TextBox tb_Address;
-        private System.Windows.Forms.TextBox tb_ContactNo;
-        private System.Windows.Forms.RadioButton rb_Male;
+        public System.Windows.Forms.TextBox tb_Name;
+        public System.Windows.Forms.TextBox tb_Age;
+        public System.Windows.Forms.TextBox tb_Address;
+        public System.Windows.Forms.TextBox tb_ContactNo;
+        public System.Windows.Forms.RadioButton rb_Male;
         private System.Windows.Forms.RadioButton rb_Female;
         private System.Windows.Forms.TextBox d;
         private System.Windows.Forms.TextBox textbox_Name;
