@@ -33,14 +33,14 @@ namespace OOP_ContactTracing
             //outputFile.WriteLine(label_Name.Text + tb_Name.Text);
             //outputFile.Close();
 
-            StreamWriter sw = new StreamWriter(Application.StartupPath + "\\Contact Tracing\\" + tb_Name.Text + ".txt");
-            sw.WriteLine(label_Name.Text + tb_Name.Text);
-            sw.WriteLine(label_Age.Text + tb_Age.Text);
-            sw.WriteLine(label_Gender.Text + Gender);
-            sw.WriteLine(label_Address.Text + tb_Address.Text);
-            sw.WriteLine(label_ContactNo.Text + ": " + tb_ContactNo.Text);
-            sw.WriteLine(label_BodyTemp.Text + tb_Temperature.Text);
-            sw.Close();
+            //StreamWriter sw = new StreamWriter(Application.StartupPath + "\\Contact Tracing\\" + tb_Name.Text + ".txt");
+            //sw.WriteLine(label_Name.Text + tb_Name.Text);
+            //sw.WriteLine(label_Age.Text + tb_Age.Text);
+            //sw.WriteLine(label_Gender.Text + Gender);
+            //sw.WriteLine(label_Address.Text + tb_Address.Text);
+            //sw.WriteLine(label_ContactNo.Text + ": " + tb_ContactNo.Text);
+            //sw.WriteLine(label_BodyTemp.Text + tb_Temperature.Text);
+            //sw.Close();
 
             this.Hide();
             Form2 f = new Form2();

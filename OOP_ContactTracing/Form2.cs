@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 
 namespace OOP_ContactTracing
@@ -18,9 +19,12 @@ namespace OOP_ContactTracing
         String Q3 = "";
         String Q4 = "";
         String Q5 = "";   
+
+        
         public Form2()
         {
             InitializeComponent();
+          
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -92,6 +96,11 @@ namespace OOP_ContactTracing
         private void rb_Q5No_CheckedChanged(object sender, EventArgs e)
         {
             Q5 = "No";
+        }
+
+        private void btn_Save_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

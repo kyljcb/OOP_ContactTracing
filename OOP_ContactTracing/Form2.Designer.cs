@@ -46,6 +46,7 @@ namespace OOP_ContactTracing
             this.rb_Q4No = new System.Windows.Forms.RadioButton();
             this.rb_Q5Yes = new System.Windows.Forms.RadioButton();
             this.rb_Q5No = new System.Windows.Forms.RadioButton();
+            this.btn_Save = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tb_Q1
@@ -217,11 +218,22 @@ namespace OOP_ContactTracing
             this.rb_Q5No.UseVisualStyleBackColor = true;
             this.rb_Q5No.CheckedChanged += new System.EventHandler(this.rb_Q5No_CheckedChanged);
             // 
+            // btn_Save
+            // 
+            this.btn_Save.Location = new System.Drawing.Point(567, 392);
+            this.btn_Save.Name = "btn_Save";
+            this.btn_Save.Size = new System.Drawing.Size(94, 29);
+            this.btn_Save.TabIndex = 19;
+            this.btn_Save.Text = "Save";
+            this.btn_Save.UseVisualStyleBackColor = true;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(694, 450);
+            this.Controls.Add(this.btn_Save);
             this.Controls.Add(this.rb_Q5No);
             this.Controls.Add(this.rb_Q5Yes);
             this.Controls.Add(this.rb_Q4No);
@@ -266,5 +278,6 @@ namespace OOP_ContactTracing
         private System.Windows.Forms.RadioButton rb_Q4No;
         private System.Windows.Forms.RadioButton rb_Q5Yes;
         private System.Windows.Forms.RadioButton rb_Q5No;
+        private System.Windows.Forms.Button btn_Save;
     }
 }
