@@ -33,6 +33,13 @@ namespace OOP_ContactTracing
         {
             InitializeComponent();
 
+            this.tb_Name = tb_Name;
+            this.tb_Age = tb_Age;
+            this.Gender = Gender;
+            this.tb_Address = tb_Address;
+            this.tb_ContactNo = tb_ContactNo;
+            this.tb_Temperature = tb_Temperature;
+
         }
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -114,6 +121,8 @@ namespace OOP_ContactTracing
             sw.WriteLine("Address: " + this.tb_Address);
             sw.WriteLine("Contact No.: "  + this.tb_ContactNo);
             sw.WriteLine("Body Temperature: " + this.tb_Temperature);
+            sw.WriteLine(tb_Q1.Text + Q1);
+            sw.WriteLine(tb_Q2.Text + Q2);
             sw.Close();
         }
     }
