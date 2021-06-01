@@ -22,6 +22,8 @@ namespace OOP_ContactTracing
 
         String tb_Name, tb_Age, Gender, tb_Address, tb_ContactNo, tb_Temperature;
 
+
+
         public Form2()
         {
             InitializeComponent(); 
@@ -44,7 +46,6 @@ namespace OOP_ContactTracing
             tb_Q3.Text = "Have you been in close contact with a COVID-19 positive patient?";
             tb_Q4.Text = "Have you been in close contact with a person under investigation (PUI)?";
             tb_Q5.Text = "Do you have any flu-like / respiratory symptoms? (eg. fever, cough, runny nose, sore throat, headache, shortness of breath.)";
-            textBox1.Text = tb_Name + tb_Age + Gender + tb_Address + tb_ContactNo + tb_Temperature;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -103,6 +104,18 @@ namespace OOP_ContactTracing
         private void cb_Q5No_CheckedChanged(object sender, EventArgs e)
         {
             Q5 = "No";
+        }
+
+        private void btn_Save_Click(object sender, EventArgs e)
+        {
+            StreamWriter sw = new StreamWriter(Application.StartupPath + "\\Contact Tracing\\" + tb_Name + ".txt");
+            sw.WriteLine("Name: "  + tb_Name);
+            sw.WriteLine("Age: " + tb_Age);
+            sw.WriteLine("Gender: " + Gender);
+            sw.WriteLine("Address: " + tb_Address);
+            sw.WriteLine("Contact No.: "  + tb_ContactNo);
+            sw.WriteLine("Body Temperature: " + tb_Temperature);
+            sw.Close();
         }
     }
 }
