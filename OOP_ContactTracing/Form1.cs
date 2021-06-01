@@ -25,6 +25,11 @@ namespace OOP_ContactTracing
 
         private void btnNext_Click(object sender, EventArgs e)
         {
+            StreamWriter outputFile;
+            outputFile = File.AppendText("Output.txt");
+            outputFile.WriteLine(label_Name.Text + tb_Name.Text);
+            outputFile.Close();
+            
 
         }
     }
