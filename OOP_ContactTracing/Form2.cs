@@ -127,6 +127,11 @@ namespace OOP_ContactTracing
             sw.WriteLine(tb_Q4.Text + " " + Q4);
             sw.WriteLine(tb_Q5.Text + " " + Q5);
             sw.Close();
+
+            Form3 f = new Form3();
+
+            this.Hide();
+            f.Show();
         }
     }
 }

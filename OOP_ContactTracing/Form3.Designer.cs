@@ -30,7 +30,7 @@ namespace OOP_ContactTracing
         private void InitializeComponent()
         {
             this.btn_ReadFile = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Form = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btn_ReadFile
@@ -43,20 +43,20 @@ namespace OOP_ContactTracing
             this.btn_ReadFile.UseVisualStyleBackColor = true;
             this.btn_ReadFile.Click += new System.EventHandler(this.btn_ReadFile_Click);
             // 
-            // textBox1
+            // Form
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(776, 356);
-            this.textBox1.TabIndex = 1;
+            this.Form.Location = new System.Drawing.Point(12, 12);
+            this.Form.Multiline = true;
+            this.Form.Name = "Form";
+            this.Form.Size = new System.Drawing.Size(776, 356);
+            this.Form.TabIndex = 1;
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Form);
             this.Controls.Add(this.btn_ReadFile);
             this.Name = "Form3";
             this.Text = "Form3";
@@ -68,6 +68,6 @@ namespace OOP_ContactTracing
         #endregion
 
         private System.Windows.Forms.Button btn_ReadFile;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Form;
     }
 }

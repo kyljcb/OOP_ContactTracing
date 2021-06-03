@@ -34,6 +34,7 @@ namespace OOP_ContactTracing
 
             f.Show();
 
+            Form3 f3 = new Form3(tb_Name.Text);
         }
 
         private void rb_Male_CheckedChanged(object sender, EventArgs e)
