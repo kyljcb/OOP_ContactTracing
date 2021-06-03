@@ -48,7 +48,8 @@ namespace OOP_ContactTracing
             tb_Q3.Text = "Have you been in close contact with a COVID-19 positive patient?";
             tb_Q4.Text = "Have you been in close contact with a person under investigation (PUI)?";
             tb_Q5.Text = "Do you have any flu-like / respiratory symptoms? (eg. fever, cough, runny nose, sore throat, headache, shortness of breath.)";
-            instructions.Text = "Please answer the following questions truthfully. Check only one one of the checkboxes per question.";       
+            //instructions.Text = "Please answer the following questions truthfully. Check only one one of the checkboxes per question.";    
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

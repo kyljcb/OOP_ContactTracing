@@ -48,6 +48,7 @@ namespace OOP_ContactTracing
             this.cb_Q5Yes = new System.Windows.Forms.CheckBox();
             this.cb_Q5No = new System.Windows.Forms.CheckBox();
             this.instructions = new System.Windows.Forms.Label();
+            this.instructions2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // tb_Q1
@@ -94,24 +95,27 @@ namespace OOP_ContactTracing
             // label_Yes
             // 
             this.label_Yes.AutoSize = true;
-            this.label_Yes.Location = new System.Drawing.Point(555, 61);
+            this.label_Yes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label_Yes.Location = new System.Drawing.Point(542, 78);
             this.label_Yes.Name = "label_Yes";
-            this.label_Yes.Size = new System.Drawing.Size(30, 20);
+            this.label_Yes.Size = new System.Drawing.Size(42, 28);
             this.label_Yes.TabIndex = 7;
             this.label_Yes.Text = "Yes";
             // 
             // label_No
             // 
             this.label_No.AutoSize = true;
-            this.label_No.Location = new System.Drawing.Point(616, 61);
+            this.label_No.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label_No.Location = new System.Drawing.Point(606, 78);
             this.label_No.Name = "label_No";
-            this.label_No.Size = new System.Drawing.Size(29, 20);
+            this.label_No.Size = new System.Drawing.Size(40, 28);
             this.label_No.TabIndex = 8;
             this.label_No.Text = "No";
             // 
             // btn_Save
             // 
-            this.btn_Save.Location = new System.Drawing.Point(567, 392);
+            this.btn_Save.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Save.Location = new System.Drawing.Point(542, 398);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(94, 29);
             this.btn_Save.TabIndex = 19;
@@ -122,7 +126,7 @@ namespace OOP_ContactTracing
             // cb_Q1Yes
             // 
             this.cb_Q1Yes.AutoSize = true;
-            this.cb_Q1Yes.Location = new System.Drawing.Point(567, 116);
+            this.cb_Q1Yes.Location = new System.Drawing.Point(552, 118);
             this.cb_Q1Yes.Name = "cb_Q1Yes";
             this.cb_Q1Yes.Size = new System.Drawing.Size(18, 17);
             this.cb_Q1Yes.TabIndex = 20;
@@ -132,7 +136,7 @@ namespace OOP_ContactTracing
             // cb_Q1No
             // 
             this.cb_Q1No.AutoSize = true;
-            this.cb_Q1No.Location = new System.Drawing.Point(628, 116);
+            this.cb_Q1No.Location = new System.Drawing.Point(613, 118);
             this.cb_Q1No.Name = "cb_Q1No";
             this.cb_Q1No.Size = new System.Drawing.Size(18, 17);
             this.cb_Q1No.TabIndex = 21;
@@ -142,7 +146,7 @@ namespace OOP_ContactTracing
             // cb_Q2Yes
             // 
             this.cb_Q2Yes.AutoSize = true;
-            this.cb_Q2Yes.Location = new System.Drawing.Point(567, 187);
+            this.cb_Q2Yes.Location = new System.Drawing.Point(552, 189);
             this.cb_Q2Yes.Name = "cb_Q2Yes";
             this.cb_Q2Yes.Size = new System.Drawing.Size(18, 17);
             this.cb_Q2Yes.TabIndex = 22;
@@ -152,7 +156,7 @@ namespace OOP_ContactTracing
             // cb_Q2No
             // 
             this.cb_Q2No.AutoSize = true;
-            this.cb_Q2No.Location = new System.Drawing.Point(628, 187);
+            this.cb_Q2No.Location = new System.Drawing.Point(613, 189);
             this.cb_Q2No.Name = "cb_Q2No";
             this.cb_Q2No.Size = new System.Drawing.Size(18, 17);
             this.cb_Q2No.TabIndex = 23;
@@ -162,7 +166,7 @@ namespace OOP_ContactTracing
             // cb_Q3Yes
             // 
             this.cb_Q3Yes.AutoSize = true;
-            this.cb_Q3Yes.Location = new System.Drawing.Point(567, 237);
+            this.cb_Q3Yes.Location = new System.Drawing.Point(552, 239);
             this.cb_Q3Yes.Name = "cb_Q3Yes";
             this.cb_Q3Yes.Size = new System.Drawing.Size(18, 17);
             this.cb_Q3Yes.TabIndex = 24;
@@ -172,7 +176,7 @@ namespace OOP_ContactTracing
             // cb_Q3No
             // 
             this.cb_Q3No.AutoSize = true;
-            this.cb_Q3No.Location = new System.Drawing.Point(628, 237);
+            this.cb_Q3No.Location = new System.Drawing.Point(613, 239);
             this.cb_Q3No.Name = "cb_Q3No";
             this.cb_Q3No.Size = new System.Drawing.Size(18, 17);
             this.cb_Q3No.TabIndex = 25;
@@ -182,7 +186,7 @@ namespace OOP_ContactTracing
             // cb_Q4Yes
             // 
             this.cb_Q4Yes.AutoSize = true;
-            this.cb_Q4Yes.Location = new System.Drawing.Point(567, 283);
+            this.cb_Q4Yes.Location = new System.Drawing.Point(552, 285);
             this.cb_Q4Yes.Name = "cb_Q4Yes";
             this.cb_Q4Yes.Size = new System.Drawing.Size(18, 17);
             this.cb_Q4Yes.TabIndex = 26;
@@ -192,7 +196,7 @@ namespace OOP_ContactTracing
             // cb_Q4No
             // 
             this.cb_Q4No.AutoSize = true;
-            this.cb_Q4No.Location = new System.Drawing.Point(628, 283);
+            this.cb_Q4No.Location = new System.Drawing.Point(613, 285);
             this.cb_Q4No.Name = "cb_Q4No";
             this.cb_Q4No.Size = new System.Drawing.Size(18, 17);
             this.cb_Q4No.TabIndex = 27;
@@ -202,7 +206,7 @@ namespace OOP_ContactTracing
             // cb_Q5Yes
             // 
             this.cb_Q5Yes.AutoSize = true;
-            this.cb_Q5Yes.Location = new System.Drawing.Point(567, 350);
+            this.cb_Q5Yes.Location = new System.Drawing.Point(552, 352);
             this.cb_Q5Yes.Name = "cb_Q5Yes";
             this.cb_Q5Yes.Size = new System.Drawing.Size(18, 17);
             this.cb_Q5Yes.TabIndex = 28;
@@ -212,7 +216,7 @@ namespace OOP_ContactTracing
             // cb_Q5No
             // 
             this.cb_Q5No.AutoSize = true;
-            this.cb_Q5No.Location = new System.Drawing.Point(628, 350);
+            this.cb_Q5No.Location = new System.Drawing.Point(613, 352);
             this.cb_Q5No.Name = "cb_Q5No";
             this.cb_Q5No.Size = new System.Drawing.Size(18, 17);
             this.cb_Q5No.TabIndex = 29;
@@ -222,17 +226,30 @@ namespace OOP_ContactTracing
             // instructions
             // 
             this.instructions.AutoSize = true;
-            this.instructions.Location = new System.Drawing.Point(13, 13);
+            this.instructions.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.instructions.Location = new System.Drawing.Point(11, 24);
             this.instructions.Name = "instructions";
-            this.instructions.Size = new System.Drawing.Size(0, 20);
+            this.instructions.Size = new System.Drawing.Size(626, 23);
             this.instructions.TabIndex = 30;
+            this.instructions.Text = "\"Please answer the following questions truthfully. Check only one one of the ";
             this.instructions.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // instructions2
+            // 
+            this.instructions2.AutoSize = true;
+            this.instructions2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.instructions2.Location = new System.Drawing.Point(23, 47);
+            this.instructions2.Name = "instructions2";
+            this.instructions2.Size = new System.Drawing.Size(220, 23);
+            this.instructions2.TabIndex = 31;
+            this.instructions2.Text = "checkboxes per question.\"";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(694, 450);
+            this.ClientSize = new System.Drawing.Size(667, 450);
+            this.Controls.Add(this.instructions2);
             this.Controls.Add(this.instructions);
             this.Controls.Add(this.cb_Q5No);
             this.Controls.Add(this.cb_Q5Yes);
@@ -253,7 +270,7 @@ namespace OOP_ContactTracing
             this.Controls.Add(this.tb_Q2);
             this.Controls.Add(this.tb_Q1);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Questionnaire";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -281,5 +298,6 @@ namespace OOP_ContactTracing
         private System.Windows.Forms.CheckBox cb_Q5Yes;
         private System.Windows.Forms.CheckBox cb_Q5No;
         private System.Windows.Forms.Label instructions;
+        private System.Windows.Forms.Label instructions2;
     }
 }

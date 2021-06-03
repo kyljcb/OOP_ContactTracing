@@ -44,5 +44,15 @@ namespace OOP_ContactTracing
                Form.Text = sr.ReadToEnd();
                 sr.Close();
         }
+
+        private void btn_Done_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
