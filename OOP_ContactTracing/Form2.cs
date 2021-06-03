@@ -55,63 +55,6 @@ namespace OOP_ContactTracing
 
         }
 
-        private void rb_Q1Yes_CheckedChanged(object sender, EventArgs e)
-        {
-            Q1 = "Yes";
-
-        }
-
-        private void rb_Q1No_CheckedChanged(object sender, EventArgs e)
-        {
-            Q1 = "No";
-        }
-
-        private void rb_Q2Yes_CheckedChanged(object sender, EventArgs e)
-        {
-            Q2 = "Yes";
-
-        }
-
-        private void rb_Q2No_CheckedChanged(object sender, EventArgs e)
-        {
-            Q2 = "No";
-
-        }
-
-        private void rb_Q3Yes_CheckedChanged(object sender, EventArgs e)
-        {
-            Q3 = "Yes";
-
-        }
-
-        private void rb_Q3No_CheckedChanged(object sender, EventArgs e)
-        {
-            Q3 = "No";
-
-        }
-
-        private void rb_Q4Yes_TextChanged(object sender, EventArgs e)
-        {
-            Q4 = "Yes";
-        }
-
-        private void rb_Q4No_CheckedChanged(object sender, EventArgs e)
-        {
-            Q4 = "No";
-
-        }
-
-        private void rb_Q5Yes_CheckedChanged(object sender, EventArgs e)
-        {
-            Q5 = "Yes";
-
-        }
-
-        private void rb_Q5No_CheckedChanged(object sender, EventArgs e)
-        {
-            Q5 = "No";
-        }
-
         private void btn_Save_Click(object sender, EventArgs e)
         {
             StreamWriter sw = new StreamWriter(Application.StartupPath + "\\Contact Tracing\\" + this.tb_Name + ".txt");
