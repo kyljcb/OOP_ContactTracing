@@ -22,63 +22,7 @@ namespace OOP_ContactTracing
 
         string tb_Name, tb_Age, Gender, tb_Address, tb_ContactNo, tb_Temperature;
 
-        private void cb_Q1Yes_CheckedChanged(object sender, EventArgs e)
-        {
-            Q1 = "Yes";
-
-        }
-
-        private void cb_Q1No_CheckedChanged(object sender, EventArgs e)
-        {
-            Q1 = "No";
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cb_Q2Yes_CheckedChanged(object sender, EventArgs e)
-        {
-            Q2 = "Yes";
-        }
-
-        private void cb_Q2No_CheckedChanged(object sender, EventArgs e)
-        {
-            Q2 = "No";
-        }
-
-        private void cb_Q3Yes_CheckedChanged(object sender, EventArgs e)
-        {
-            Q3 = "Yes";
-
-        }
-
-        private void cb_Q3No_CheckedChanged(object sender, EventArgs e)
-        { 
-            Q3 = "No";
-        }
-
-        private void cb_Q4Yes_CheckedChanged(object sender, EventArgs e)
-        {
-            Q4 = "Yes";
-        }
-
-        private void cb_Q4No_CheckedChanged(object sender, EventArgs e)
-        {
-            Q4 = "No";
-        }
-
-        private void cb_Q5Yes_CheckedChanged(object sender, EventArgs e)
-        {
-            Q5 = "Yes";
-        }
-
-        private void cb_Q5No_CheckedChanged(object sender, EventArgs e)
-        {
-            Q5 = "No";
-        }
-
+       
         public Form2()
         {
             InitializeComponent();
@@ -128,10 +72,67 @@ namespace OOP_ContactTracing
             sw.WriteLine(tb_Q5.Text + " " + Q5);
             sw.Close();
 
-            Form3 f = new Form3();
+            Form3 f = new Form3(tb_Name);
 
             this.Hide();
             f.Show();
         }
+        private void cb_Q1Yes_CheckedChanged(object sender, EventArgs e)
+        {
+            Q1 = "Yes";
+
+        }
+
+        private void cb_Q1No_CheckedChanged(object sender, EventArgs e)
+        {
+            Q1 = "No";
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cb_Q2Yes_CheckedChanged(object sender, EventArgs e)
+        {
+            Q2 = "Yes";
+        }
+
+        private void cb_Q2No_CheckedChanged(object sender, EventArgs e)
+        {
+            Q2 = "No";
+        }
+
+        private void cb_Q3Yes_CheckedChanged(object sender, EventArgs e)
+        {
+            Q3 = "Yes";
+
+        }
+
+        private void cb_Q3No_CheckedChanged(object sender, EventArgs e)
+        {
+            Q3 = "No";
+        }
+
+        private void cb_Q4Yes_CheckedChanged(object sender, EventArgs e)
+        {
+            Q4 = "Yes";
+        }
+
+        private void cb_Q4No_CheckedChanged(object sender, EventArgs e)
+        {
+            Q4 = "No";
+        }
+
+        private void cb_Q5Yes_CheckedChanged(object sender, EventArgs e)
+        {
+            Q5 = "Yes";
+        }
+
+        private void cb_Q5No_CheckedChanged(object sender, EventArgs e)
+        {
+            Q5 = "No";
+        }
+
     }
 }

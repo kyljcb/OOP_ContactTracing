@@ -21,26 +21,28 @@ namespace OOP_ContactTracing
             InitializeComponent();
             
         }
-
         public Form3(String tb_Name)
         {
             InitializeComponent();
+
             this.tb_Name = tb_Name;
+
         }
+
+        //public Form3(String nametext)
+        //{
+        //    InitializeComponent();
+
+        //    // this.tb_Name = tb_Name;
+        //    this.nametext = nametext;
+        //}
 
         private void btn_ReadFile_Click(object sender, EventArgs e)
         {
-            try
-            {
-                StreamReader sr = new StreamReader(Application.StartupPath + "\\Contact Tracing\\" + this.tb_Name + ".txt");
-                Form.Text = sr.ReadToEnd();
-                sr.Close();
-            }
-            catch
-            {
-
-            }
            
+               StreamReader sr = new StreamReader(Application.StartupPath + "\\Contact Tracing\\" + this.tb_Name + ".txt");
+               Form.Text = sr.ReadToEnd();
+                sr.Close();
         }
     }
 }
