@@ -22,6 +22,62 @@ namespace OOP_ContactTracing
 
         string tb_Name, tb_Age, Gender, tb_Address, tb_ContactNo, tb_Temperature;
 
+        private void cb_Q1Yes_CheckedChanged(object sender, EventArgs e)
+        {
+            Q1 = "Yes";
+
+        }
+
+        private void cb_Q1No_CheckedChanged(object sender, EventArgs e)
+        {
+            Q1 = "No";
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cb_Q2Yes_CheckedChanged(object sender, EventArgs e)
+        {
+            Q2 = "Yes";
+        }
+
+        private void cb_Q2No_CheckedChanged(object sender, EventArgs e)
+        {
+            Q2 = "No";
+        }
+
+        private void cb_Q3Yes_CheckedChanged(object sender, EventArgs e)
+        {
+            Q3 = "Yes";
+
+        }
+
+        private void cb_Q3No_CheckedChanged(object sender, EventArgs e)
+        { 
+            Q3 = "No";
+        }
+
+        private void cb_Q4Yes_CheckedChanged(object sender, EventArgs e)
+        {
+            Q4 = "Yes";
+        }
+
+        private void cb_Q4No_CheckedChanged(object sender, EventArgs e)
+        {
+            Q4 = "No";
+        }
+
+        private void cb_Q5Yes_CheckedChanged(object sender, EventArgs e)
+        {
+            Q5 = "Yes";
+        }
+
+        private void cb_Q5No_CheckedChanged(object sender, EventArgs e)
+        {
+            Q5 = "No";
+        }
 
         public Form2()
         {
@@ -48,6 +104,7 @@ namespace OOP_ContactTracing
             tb_Q3.Text = "Have you been in close contact with a COVID-19 positive patient?";
             tb_Q4.Text = "Have you been in close contact with a person under investigation (PUI)?";
             tb_Q5.Text = "Do you have any flu-like / respiratory symptoms? (eg. fever, cough, runny nose, sore throat, headache, shortness of breath.)";
+            instructions.Text = "Please answer the following questions truthfully. Check only one one of the checkboxes per question.";       
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -64,8 +121,11 @@ namespace OOP_ContactTracing
             sw.WriteLine("Address: " + this.tb_Address);
             sw.WriteLine("Contact No.: "  + this.tb_ContactNo);
             sw.WriteLine("Body Temperature: " + this.tb_Temperature);
-            sw.WriteLine(tb_Q1.Text + Q1);
-            sw.WriteLine(tb_Q2.Text + Q2);
+            sw.WriteLine(tb_Q1.Text + " " + Q1);
+            sw.WriteLine(tb_Q2.Text + " " + Q2);
+            sw.WriteLine(tb_Q3.Text + " " + Q3);
+            sw.WriteLine(tb_Q4.Text + " " + Q4);
+            sw.WriteLine(tb_Q5.Text + " " + Q5);
             sw.Close();
         }
     }
