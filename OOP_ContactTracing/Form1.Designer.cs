@@ -206,6 +206,7 @@ namespace OOP_ContactTracing
             this.Controls.Add(this.tb_Name);
             this.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact Tracing Form";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

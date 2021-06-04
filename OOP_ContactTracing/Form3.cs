@@ -21,6 +21,8 @@ namespace OOP_ContactTracing
             InitializeComponent();
             
         }
+        
+        // code to access variable from form2
         public Form3(String tb_Name)
         {
             InitializeComponent();
@@ -28,31 +30,32 @@ namespace OOP_ContactTracing
             this.tb_Name = tb_Name;
 
         }
-
-        //public Form3(String nametext)
-        //{
-        //    InitializeComponent();
-
-        //    // this.tb_Name = tb_Name;
-        //    this.nametext = nametext;
-        //}
-
         private void btn_ReadFile_Click(object sender, EventArgs e)
         {
-           
-               StreamReader sr = new StreamReader(Application.StartupPath + "\\Contact Tracing\\" + this.tb_Name + ".txt");
-               Form.Text = sr.ReadToEnd();
-                sr.Close();
+           // code to write the text file from previous form.
+             StreamReader sr = new StreamReader(Application.StartupPath + "\\Contact Tracing\\" + this.tb_Name + ".txt");
+             Form.Text = sr.ReadToEnd();
+             sr.Close();
         }
 
         private void btn_Done_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Application.Exit(); // exits the application
         }
 
         private void Form3_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit(); // exit application when pressing the "x" button. 
         }
     }
 }

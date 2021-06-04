@@ -74,7 +74,6 @@ namespace OOP_ContactTracing
             this.tb_Q3.Name = "tb_Q3";
             this.tb_Q3.Size = new System.Drawing.Size(498, 40);
             this.tb_Q3.TabIndex = 2;
-            this.tb_Q3.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // tb_Q4
             // 
@@ -232,7 +231,6 @@ namespace OOP_ContactTracing
             this.instructions.Size = new System.Drawing.Size(626, 23);
             this.instructions.TabIndex = 30;
             this.instructions.Text = "\"Please answer the following questions truthfully. Check only one one of the ";
-            this.instructions.Click += new System.EventHandler(this.label1_Click);
             // 
             // instructions2
             // 
@@ -269,7 +267,10 @@ namespace OOP_ContactTracing
             this.Controls.Add(this.tb_Q3);
             this.Controls.Add(this.tb_Q2);
             this.Controls.Add(this.tb_Q1);
+            this.MaximumSize = new System.Drawing.Size(685, 497);
+            this.MinimumSize = new System.Drawing.Size(685, 497);
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Questionnaire";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);

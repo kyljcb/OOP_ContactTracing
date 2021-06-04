@@ -47,11 +47,15 @@ namespace OOP_ContactTracing
             // 
             // Form
             // 
+            this.Form.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Form.Location = new System.Drawing.Point(12, 12);
+            this.Form.MaximumSize = new System.Drawing.Size(776, 356);
+            this.Form.MinimumSize = new System.Drawing.Size(776, 356);
             this.Form.Multiline = true;
             this.Form.Name = "Form";
             this.Form.Size = new System.Drawing.Size(776, 356);
             this.Form.TabIndex = 1;
+            this.Form.TextChanged += new System.EventHandler(this.Form_TextChanged);
             // 
             // btn_Done
             // 
@@ -72,7 +76,10 @@ namespace OOP_ContactTracing
             this.Controls.Add(this.btn_Done);
             this.Controls.Add(this.Form);
             this.Controls.Add(this.btn_ReadFile);
+            this.MaximumSize = new System.Drawing.Size(818, 497);
+            this.MinimumSize = new System.Drawing.Size(818, 497);
             this.Name = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Final check";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
