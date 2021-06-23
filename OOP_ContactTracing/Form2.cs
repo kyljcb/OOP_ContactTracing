@@ -22,26 +22,22 @@ namespace OOP_ContactTracing
 
         // string for variables used in form1
         string tb_Name, tb_Age, Gender, tb_Address, tb_ContactNo, tb_Temperature;
-
-       
+      
         public Form2()
         {
-            InitializeComponent();
-          
+            InitializeComponent();   
         }
-
         // used to acces form1 variables
         public Form2(String tb_Name, String tb_Age, String Gender, String tb_Address, String tb_ContactNo, String tb_Temperature)
         {
             InitializeComponent();
-
+            // initialize
             this.tb_Name = tb_Name;
             this.tb_Age = tb_Age;
             this.Gender = Gender;
             this.tb_Address = tb_Address;
             this.tb_ContactNo = tb_ContactNo;
             this.tb_Temperature = tb_Temperature;
-
         }
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -53,7 +49,6 @@ namespace OOP_ContactTracing
             tb_Q5.Text = "Do you have any flu-like / respiratory symptoms? (eg. fever, cough, runny nose, sore throat, headache, shortness of breath.)";
            
         }
-
         private void btn_Save_Click(object sender, EventArgs e)
         {
             // code to write the inputs into a text file.
@@ -72,66 +67,55 @@ namespace OOP_ContactTracing
             sw.Close();
 
             Form3 f = new Form3(tb_Name);
-
             this.Hide();
             f.Show();
         }
-        private void cb_Q1Yes_CheckedChanged(object sender, EventArgs e)
+
+        // assigns "Yes" or "No" for the checkboxes
+       private void cb_Q1Yes_CheckedChanged(object sender, EventArgs e)
         {
             Q1 = "Yes";
-
         }
-
         private void cb_Q1No_CheckedChanged(object sender, EventArgs e)
         {
             Q1 = "No";
         }
-
         private void cb_Q2Yes_CheckedChanged(object sender, EventArgs e)
         {
             Q2 = "Yes";
         }
-
         private void cb_Q2No_CheckedChanged(object sender, EventArgs e)
         {
             Q2 = "No";
         }
-
-        private void cb_Q3Yes_CheckedChanged(object sender, EventArgs e)
+       private void cb_Q3Yes_CheckedChanged(object sender, EventArgs e)
         {
             Q3 = "Yes";
-
         }
-
         private void cb_Q3No_CheckedChanged(object sender, EventArgs e)
         {
-            Q3 = "No";
+           Q3 = "No";
         }
 
         private void cb_Q4Yes_CheckedChanged(object sender, EventArgs e)
         {
             Q4 = "Yes";
         }
-
         private void cb_Q4No_CheckedChanged(object sender, EventArgs e)
         {
             Q4 = "No";
         }
-
         private void cb_Q5Yes_CheckedChanged(object sender, EventArgs e)
         {
             Q5 = "Yes";
         }
-
         private void cb_Q5No_CheckedChanged(object sender, EventArgs e)
         {
             Q5 = "No";
         }
-
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit(); // exit application when pressing the "x" button. 
         }
-
     }
 }

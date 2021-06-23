@@ -19,7 +19,6 @@ namespace OOP_ContactTracing
             InitializeComponent();
      
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
          
@@ -30,17 +29,14 @@ namespace OOP_ContactTracing
             Form2 f = new Form2(tb_Name.Text, tb_Age.Text, Gender, tb_Address.Text, tb_ContactNo.Text, tb_Temperature.Text);
             f.Show();//shows form2
         }
-
         private void rb_Male_CheckedChanged(object sender, EventArgs e)
         {
-            Gender = "Male";
+            Gender = "Male"; // assigns male to gender
         }
-
         private void rb_Female_CheckedChanged(object sender, EventArgs e)
         {
-            Gender = "Female";
+            Gender = "Female"; // assigns female to gender
         }
-
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit(); // exit application when pressing the "x" button. 

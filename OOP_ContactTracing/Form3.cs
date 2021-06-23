@@ -15,20 +15,15 @@ namespace OOP_ContactTracing
     {
 
         string tb_Name;
-
         public Form3()
         {
-            InitializeComponent();
-            
-        }
-        
+            InitializeComponent();        
+        }   
         // code to access variable from form2
         public Form3(String tb_Name)
         {
             InitializeComponent();
-
             this.tb_Name = tb_Name;
-
         }
         private void btn_ReadFile_Click(object sender, EventArgs e)
         {
@@ -37,22 +32,13 @@ namespace OOP_ContactTracing
              Form.Text = sr.ReadToEnd();
              sr.Close();
         }
-
         private void btn_Done_Click(object sender, EventArgs e)
         {
             Application.Exit(); // exits the application
         }
-
         private void Form3_Load(object sender, EventArgs e)
         {
-
         }
-
-        private void Form_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit(); // exit application when pressing the "x" button. 
